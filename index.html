@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calendrier — Collège Jean Rostand de Licques</title>
+<style>
+:root{--paper:#f7f0df;--ink:#2d2830;--burg:#7d2433;--navy:#18324b;--gold:#c9972f;--line:#d9c8a8}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+background:radial-gradient(circle at 20% 0%,rgba(201,151,47,.12),transparent 30%),linear-gradient(180deg,#efe5d0,#f9f4e8 32%,#f4ecdc)}
+.top{background:linear-gradient(135deg,var(--navy),#264a6b);color:#fff;padding:13px 20px;box-shadow:0 3px 18px #0003}
+.topin{max-width:1200px;margin:auto;display:flex;align-items:center;gap:15px}
+.brand{font:700 1.08rem Georgia,serif}
+.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #ffffff55;padding:8px 12px;border-radius:999px}
+main{max-width:1200px;margin:auto;padding:30px 20px 60px}
+.hero{background:linear-gradient(120deg,#fffaf0f7,#f7f0dfea);border:1px solid #ddcfb5;border-radius:28px;
+padding:30px 34px;box-shadow:0 18px 40px #4c341c1f;margin-bottom:20px}
+.badge{display:inline-flex;background:#fff;border:1px solid #e0d0ac;border-radius:999px;padding:7px 12px;
+font-weight:800;color:var(--navy);margin-bottom:12px}
+h1{font:700 clamp(2.2rem,5vw,4rem) Georgia,serif;color:var(--burg);margin:0 0 10px}
+.hero p{font-size:1.05rem;line-height:1.55;margin:0;max-width:800px}
+.calendar-card{background:#fff;border:1px solid #ddd0ba;border-radius:24px;padding:12px;box-shadow:0 10px 28px #37281414;overflow:hidden}
+.frame{position:relative;width:100%;height:min(74vh,760px);min-height:620px;border-radius:16px;overflow:hidden;background:#fff}
+iframe{width:100%;height:100%;border:0}
+.note{text-align:center;color:#6d655c;font-size:.9rem;margin:15px 0 0}
+@media(max-width:700px){
+ main{padding:16px 10px 40px} .hero{padding:23px 20px;border-radius:20px}
+ .calendar-card{padding:6px;border-radius:18px} .frame{height:75vh;min-height:560px}
+ .brand{font-size:.92rem} .back{padding:7px 9px;font-size:.85rem}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin">
+<div class="brand">M. Weens — Collège Jean Rostand de Licques</div>
+<a class="back" href="https://wweens.github.io/">← Retour au site</a>
+</div></header>
+<main>
+<section class="hero">
+<div class="badge">📅 Agenda du collège</div>
+<h1>Calendrier</h1>
+<p>Les dates à retenir, les événements et les échéances du Collège Jean Rostand.</p>
+</section>
+<section class="calendar-card">
+<div class="frame">
+<iframe src="https://calendar.google.com/calendar/embed?height=700&wkst=2&ctz=Europe%2FParis&showPrint=0&showTabs=1&showCalendars=0&showTz=0&mode=MONTH&src=ssd4hmlgimbls6bg98r30ssivs%40group.calendar.google.com" title="Agenda Jean Rostand" loading="lazy"></iframe>
+</div>
+</section>
+<p class="note">Le calendrier est synchronisé avec l'agenda Google « Agenda Jean Rostand ».</p>
+</main>
+</body>
+</html>
